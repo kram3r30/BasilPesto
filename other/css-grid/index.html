@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Grid</title>
+
+	<!-- https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228 -->
+
+	<style>
+
+/*	.wrapper {
+		display: grid;
+	}*/
+
+	/*Simple squares*/
+
+/*	.wrapper {
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-template-rows: 50px 50px;
+		}*/
+
+	/*Alernate layout*/
+
+/*	.wrapper {
+		display: grid;
+		grid-template-columns: 200px 50px 100px;
+		grid-template-rows: 100px 30px;
+		}*/
+
+		/*Too many rows?*/
+
+/*		.wrapper {
+			display: grid;
+			grid-template-columns: 100px 100px 100px;
+			grid-template-rows: 100px 100px 100px;
+		}*/
+
+/*		div:not(.wrapper) {
+			border: 1px solid #999;
+		}*/
+
+		/*Grid lines - note alternate syntax */
+
+/*		div:nth-child(1) {
+			background: red;
+			grid-column-start: 1;
+			grid-column-end: 4;
+		}*/
+
+/*		div:nth-child(1) {
+			background: red;
+			grid-column: 1 / 3;
+		}*/
+
+/*		div:nth-child(3) {
+			grid-row-start: 2;
+			grid-row-end: 4;
+		}*/
+
+/*		div:nth-child(4) {
+			grid-column-start: 2;
+			grid-column-end: 4;
+		}*/
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+</body>
+</html>

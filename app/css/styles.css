@@ -1,0 +1,69 @@
+html {
+  --basil-green: #88a308;
+  --dark-gray: #333333;
+  --light-gray: #e4e1d1;
+  --light-green: #f5faef;
+  --orange: #f90;
+  --light-orange: #ebbd4e;
+  --red: #f00;
+  --max-width: 840px;
+  --breakpoint: 640px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100%/1.5 "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans",
+    "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  color: var(--dark-gray);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+h2,
+h3 {
+  color: var(--basil-green);
+  margin: 8px 0;
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color 0.5s linear;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+li > h4 {
+  margin-top: 12px;
+}
+
+aside li {
+  list-style: none;
+}
+
+article li,
+article ol {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+figcaption {
+  font-size: 0.75rem;
+}
+
+img {
+  width: 100%;
+}
