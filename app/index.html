@@ -24,7 +24,24 @@
 
     <main class="content">
       <article itemscope itemtype="http://schema.org/Recipe">
-        <img src="img/pesto.jpg" />
+        <figure>
+          <picture>
+            <source
+              srcset="img/pesto/pesto_iodywc_c_scale,w_1380.jpg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="img/pesto/pesto_iodywc_c_scale,w_780.jpg"
+              media="(min-width: 800px)"
+            />
+            <img itemprop="image" src="img/pesto.jpg" />
+          </picture>
+          <figcaption>
+            Classic, simple basil pesto recipe with fresh basil leaves, pine
+            nuts, garlic, Romano or Parmesan cheese, extra virgin olive oil, and
+            salt and pepper.
+          </figcaption>
+        </figure>
 
         <h2 itemprop="name">Pesto</h2>
 

@@ -1,3 +1,5 @@
+@import url(font/stylesheet.css);
+
 html {
   --basil-green: #88a308;
   --dark-gray: #333333;
@@ -13,6 +15,11 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+::selection {
+  background: var(--basil-green);
+  color: #fff;
 }
 
 body {
@@ -50,6 +57,49 @@ li > h4 {
   margin-top: 12px;
 }
 
+header {
+  height: 120px;
+  background: var(--basil-green);
+  border-radius: 8px 8px 0px 0px;
+  position: relative;
+}
+
+header h1 {
+  background: url(img/basil.png) no-repeat;
+  font-family: futura_stdlight, sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 5rem;
+  padding-left: 260px;
+  padding-top: 90px;
+  transform: translate(-100px, -80px);
+}
+
+header a.beta {
+  background: url("img/burst.svg") no-repeat;
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  width: 85px;
+  height: 85px;
+  line-height: 85px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(20deg);
+  transition: all 1s ease;
+}
+
+header a.beta:hover {
+  transform: rotate(0deg) scale(1.2);
+}
+
+article,
+aside {
+  padding: 1rem;
+}
+
 aside li {
   list-style: none;
 }
@@ -66,4 +116,25 @@ figcaption {
 
 img {
   width: 100%;
+}
+
+footer {
+  background-color: var(--basil-green);
+  padding: 1rem;
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .content {
+    display: flex;
+  }
+  article {
+    flex: 1 0 60%;
+  }
+
+  aside {
+    background-color: var(--light-green);
+    box-shadow: -4px 0 4px #ddd;
+  }
 }
