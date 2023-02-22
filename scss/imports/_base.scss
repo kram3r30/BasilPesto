@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "futura_stdlight";
+  src: url("font/futurastd-light-webfont-webfont.woff2") format("woff2"),
+    url("font/futurastd-light-webfont-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  --basil-green: #88a308;
+  --dark-gray: #333333;
+  --light-gray: #e4e1d1;
+  --light-green: #f5faef;
+  --orange: #f90;
+  --light-orange: #ebbd4e;
+  --red: #f00;
+  --max-width: 840px;
+  --breakpoint: 640px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: var(--basil-green);
+  color: #fff;
+}
+
+body {
+  font: 100%/1.5 "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans",
+    "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  color: var(--dark-gray);
+  max-width: var(--max-width);
+  @media (min-width: $break-two) {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
+  }
+}
+
+h2,
+h3 {
+  color: var(--basil-green);
+  margin: 8px 0;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color 0.5s linear;
+}
+
+li > h4 {
+  margin-top: 12px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
