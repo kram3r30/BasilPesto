@@ -6,6 +6,7 @@
   "scripts": {
     "server": "browser-sync app -w",
     "sass": "sass  scss/styles.scss app/css/styles.css --watch --source-map",
+    "rollup": "rollup src/index.js --file app/js/bundle.js --format iife",
     "start": "npm run server & npm run sass"
   },
   "keywords": [],
@@ -16,5 +17,8 @@
     "concurrently": "^7.6.0",
     "prettier": "^2.8.4",
     "sass": "^1.58.1"
+  },
+  "dependencies": {
+    "rollup": "^3.17.2"
   }
 }
